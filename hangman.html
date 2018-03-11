@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-        <link rel="stylesheet"  href="assets/css/style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<title>Page Title</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assest/javascript/game.js" script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>HangMan Game</title>
+
 </head>
+
 <body>
+    <div id="container">
+        <div id="header">
+            <h1> Hangman Game </h1>
+            <div id="wrapper">
+                <p>Guess letters to reveal the word</p>
 
-<div id= "wins_section">
-    <h1>Wins</h1>
-    <div id="wins"></div>
-</div>
+                <div id="rules">
+                    <p>
+                        You have
+                        <span id="lives"></span> Lives Left
+                        <br> There are
+                        <span id="numLetters">0</span> Letters in This word
+                    </p>
+                    <h1 id="WORDS">_ _ _ _ _ _ _ _ _ </h1>
 
-<div id = "letters_guesses_section">
-    <h1>Letters Guessed</h1>
-    <div id="letters_guessed"></div>
-</div>
+                    <div id="letters">
+                        <a id="A">A</a>
+                        <a id="B">B</a>
+                        <a id="C">C</a>
+                        <a id="D">D</a>
+                        <a id="E">E</a>
+                        <a id="F">F</a>
+                        <a id="G">G</a>
+                        <a id="H">H</a>
+                        <a id="I">I</a>
+                        <a id="J">J</a>
+                        <a id="K">K</a>
+                        <a id="L">L</a>
+                        <a id="M">M</a>
+                        <a id="N">N</a>
+                        <a id="O">O</a>
+                        <a id="P">P</a>
+                        <a id="Q">Q</a>
+                        <a id="R">R</a>
+                        <a id="S">S</a>
+                        <a id="T">T</a>
+                        <a id="U">U</a>
+                        <a id="V">V</a>
+                        <a id="W">W</a>
+                        <a id="X">X</a>
+                        <a id="Y">Y</a>
+                        <a id="Z">Z</a>
+                    </div>
+<br>
 
-<div id= "current_word_section">
-    <h1>Current Word</h1>
-    <div id="current_word"></div>
-</div>
-
-<div id="guesses_remaining_section">
-    <h1>Guesses Remaining</h1>
-    <div id="guesses_remaining"></div>
-</div>
-
-
-<script src="assest/javascript/game.js">
-
-</script>
-    
-
+                    <button id="reset">Play again</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
